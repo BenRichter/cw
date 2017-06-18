@@ -1,4 +1,4 @@
-# Steam-Key-Tumbler
+# CW
 <p align="center">
 Receive steam keys by personal share link<br>
 (based on Vuepack which uses Vue 2, Vuex, Vue-router and Webpack 2)

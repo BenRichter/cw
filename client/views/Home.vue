@@ -2,7 +2,7 @@
     <div>
         <header>
             <div class="container">
-                <h1>Steam Key Tumbler</h1>
+                <h1>Call Waiter</h1>
             </div>
         </header>
 
