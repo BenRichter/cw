@@ -15,41 +15,47 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
+    margin:         0;
+    padding:        0;
+    border:         0;
+    font-size:      100%;
+    font:           inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
-    border-spacing: 0;
+    border-spacing:  0;
 }
 
 /* no highlight effect on tap */
 a.menu, button {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    filter:                      progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 { font-size-adjust: .5 }

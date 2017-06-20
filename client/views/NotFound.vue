@@ -10,18 +10,16 @@
             <strong>404 - Seite nicht gefunden</strong>
             <hr/>
             <p>
-                Das ist peinlich. Schnell <a href="javascript: history.back()">zurück</a>    !
+                Das ist peinlich. Schnell <a href="javascript: history.back()">zurück</a> !
             </p>
         </div>
     </div>
 </template>
 
 <script>
-//import counter from 'components/Counter';
+    //import counter from 'components/Counter';
 
-export default {
-  components: {
-
-  }
-};
+    export default {
+        components: {}
+    };
 </script>

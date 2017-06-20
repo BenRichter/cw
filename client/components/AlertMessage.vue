@@ -30,10 +30,10 @@
     }
 
     .alert {
-        border: solid 1px #cccccc;
+        border:        solid 1px #cccccc;
         border-radius: 3px;
-        display: block;
-        padding: 0.5em;
+        display:       block;
+        padding:       0.5em;
         margin-bottom: 0.5em;
     }
 

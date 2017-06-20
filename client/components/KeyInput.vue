@@ -2,7 +2,9 @@
 
 <template>
     <div class="key-input">
-        Hello User: <strong><slot></slot></strong>
+        Hello User: <strong>
+        <slot></slot>
+    </strong>
         <p>Put in Steam Keys and share the Key with your Community:</p>
         <textarea name="steamkeys" cols="60" rows="8" v-model="message"></textarea>
 
@@ -11,7 +13,7 @@
         </ul>
 
         <input type="text" v-model="newName"/>
-        <button :title="title" :class="{ 'is-loading': isLoading }" @click="toggleLoading" >Add name</button>
+        <button :title="title" :class="{ 'is-loading': isLoading }" @click="toggleLoading">Add name</button>
     </div>
 </template>
 

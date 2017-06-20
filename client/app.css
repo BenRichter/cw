@@ -1,61 +1,63 @@
-*, *:before, *:after {  box-sizing: inherit; }
+*, *:before, *:after { box-sizing: inherit; }
 
 /* Lobotomized Owl: spaces all but first elements, size based on text */
 * + * { margin-top: 1.5em; }
 
 html {
-    -webkit-text-size-adjust: none;  /* safari sizing */
-
-    -moz-osx-font-smoothing: grayscale; /* legibility */
-    -webkit-font-smoothing:  antialiased;
-    text-rendering:          optimizeLegibility;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    height: 100%;
-    min-height: 100%;
+    -webkit-text-size-adjust: none; /* safari sizing */
+    -moz-osx-font-smoothing:  grayscale; /* legibility */
+    -webkit-font-smoothing:   antialiased;
+    text-rendering:           optimizeLegibility;
+    -webkit-box-sizing:       border-box;
+    -moz-box-sizing:          border-box;
+    box-sizing:               border-box;
+    height:                   100%;
+    min-height:               100%;
 }
 
 body {
     margin:      0;
-    font-size: 100%;
+    font-size:   100%;
     font-family: -apple-system, BlinkMacSystemFont,
                  'avenir next', avenir,
                  helvetica, 'helvetica neue',
                  Ubuntu,
                  'segoe ui', arial,
                  sans-serif;
-
-    min-height: 100%;
-    background: #1b2838;
-    color: #c6d4df;
+    min-height:  100%;
+    background:  #1b2838;
+    color:       #c6d4df;
 }
 
 h1, h2, h3 {
-    color: #fff;
+    color: #ffffff;
 }
 
 h1 { font-size: 2em; line-height: 1.25 }
+
 h2 { font-size: 1.625em; line-height: 1.15384615 }
+
 h3 { font-size: 1.375em; line-height: 1.13636364 }
 
-code { color: #1b2838;}
+code { color: #1b2838; }
 
 @media (min-width: 43.75em) {
     h1 { font-size: 2.5em; line-height: 1.125 }
+
     h2 { font-size: 2em; line-height: 1.25 }
+
     h3 { font-size: 1.5em; line-height: 1.25 }
 }
 
 @media (min-width: 56.25em) {
     h1 { font-size: 3em; line-height: 1.05 }
+
     h2 { font-size: 2.25em; line-height: 1.25 }
+
     h3 { font-size: 1.75em; line-height: 1.25 }
 }
 
-strong { font-weight: bold;}
+strong { font-weight: bold; }
 
 /* Retina stuff here */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
