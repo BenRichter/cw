@@ -23,17 +23,17 @@
 </template>
 
 <script>
-import counter from 'components/Counter'
-import keyInput from 'components/KeyInput'
-import keyOutput from '../components/KeyOutput'
-import alertMessage from '../components/AlertMessage.vue'
+    import counter from 'components/Counter';
+    import keyInput from 'components/KeyInput';
+    import keyOutput from '../components/KeyOutput';
+    import alertMessage from '../components/AlertMessage.vue';
 
-export default {
-  components: {
-      counter,
-      keyInput,
-      keyOutput,
-      alertMessage
-  }
-}
+    export default {
+        components: {
+            counter,
+            keyInput,
+            keyOutput,
+            alertMessage
+        }
+    };
 </script>
