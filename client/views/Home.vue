@@ -7,6 +7,8 @@
         </header>
 
         <div class="container">
+            <buttonCall></buttonCall>
+
             <alert-message></alert-message>
 
             <key-input>Benson</key-input>
@@ -27,13 +29,15 @@
     import keyInput from 'components/KeyInput';
     import keyOutput from '../components/KeyOutput';
     import alertMessage from '../components/AlertMessage.vue';
+    import buttonCall from '../components/ButtonCall.vue';
 
     export default {
         components: {
             counter,
             keyInput,
             keyOutput,
-            alertMessage
+            alertMessage,
+            buttonCall
         }
     };
 </script>
