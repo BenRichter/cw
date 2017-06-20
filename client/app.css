@@ -1,15 +1,21 @@
-*, *:before, *:after { box-sizing: inherit; }
+/* todo: import bulma.css */
 
-/* Lobotomized Owl: spaces all but first elements, size based on text */
-* + * { margin-top: 1.5em; }
+*, *:before, *:after {
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
 
 html {
     -webkit-text-size-adjust: none; /* safari sizing */
     -moz-osx-font-smoothing:  grayscale; /* legibility */
     -webkit-font-smoothing:   antialiased;
     text-rendering:           optimizeLegibility;
-    -webkit-box-sizing:       border-box;
-    -moz-box-sizing:          border-box;
     box-sizing:               border-box;
     height:                   100%;
     min-height:               100%;
@@ -28,6 +34,9 @@ body {
     background:  #1b2838;
     color:       #c6d4df;
 }
+
+/* Lobotomized Owl: spaces all but first elements, size based on text */
+* + * { margin-top: 1.5em; }
 
 h1, h2, h3 {
     color: #ffffff;
@@ -63,4 +72,3 @@ strong { font-weight: bold; }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 }
-
