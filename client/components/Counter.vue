@@ -1,3 +1,5 @@
+<!--todo: remove-->
+
 <template>
     <div class="counter-wrapper" v-show="isVisible">
         <button class="close" @click="isVisible = false">x</button>
