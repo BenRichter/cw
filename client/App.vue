@@ -5,41 +5,32 @@
 </template>
 
 <script>
-    require('./reset.css');
-    require('./app.css');
+    // require('./reset.css');
 </script>
 
-<style>
-    header {
-        background: #171a21;
+<style lang="scss">
+    @import "../node_modules/bulma/sass/utilities/_all";
+    @import "../node_modules/bulma/sass/base/_all";
 
-    h1 {
-        color: #b8b6b4;
-    }
+    @import "../node_modules/bulma/sass/elements/_all";
+    @import "../node_modules/bulma/sass/components/_all";
+    @import "../node_modules/bulma/sass/grid/_all";
+    @import "../node_modules/bulma/sass/layout/_all";
 
-    }
+    /* Bulma Variables for Theming
+       http://bulma.io/documentation/overview/variables/
+    */
+    $blue: #72d0eb;
 
-    .container {
-        padding:     1% 2%;
-        max-width:   600px;
-        margin:      auto;
-        font-size:   1em; /* ~ 16px */
-        line-height: 1.25;
+    $primary: $turquoise;
 
-    /* ~ 20px */
+    /* http://bulma.io/documentation/overview/responsiveness/
 
-    code {
-        background-color: #f0f0f0;
-        padding:          3px 5px;
-        border-radius:    2px;
-    }
+        mobile: up to 768px
+        tablet: from 769px
+        desktop: from 1000px
+        widescreen: from 1192px
+    */
 
-    }
-
-    @media (min-width: 43.75em) {
-        .container {
-            font-size:   1em;
-            line-height: 1.375;
-        }
-    }
+    /* Global Application Styling */
 </style>
