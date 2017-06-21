@@ -1,17 +1,30 @@
 <template>
     <div id="app">
+        <header-component></header-component>
         <router-view></router-view>
+        <footer-component></footer-component>
     </div>
 </template>
 
+
 <script>
+    import headerComponent from 'components/_Header.vue';
+    import footerComponent from 'components/_Footer.vue';
+
+    export default {
+        components: {
+            headerComponent,
+            footerComponent
+        }
+    }
+
     // require('./reset.css');
 </script>
+
 
 <style lang="scss">
     @import "../node_modules/bulma/sass/utilities/_all";
     @import "../node_modules/bulma/sass/base/_all";
-
     @import "../node_modules/bulma/sass/elements/_all";
     @import "../node_modules/bulma/sass/components/_all";
     @import "../node_modules/bulma/sass/grid/_all";
