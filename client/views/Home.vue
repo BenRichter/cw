@@ -1,11 +1,5 @@
 <template>
-    <div>
-        <header>
-            <div class="container">
-                <h1>Call Waiter</h1>
-            </div>
-        </header>
-
+    <div class="section">
         <div class="container">
             <alert-message></alert-message>
 
@@ -26,7 +20,7 @@
             buttonCallWaiter,
             buttonCallCheck
         }
-    };
+    }
 </script>
 
 <style scoped lang="scss">
