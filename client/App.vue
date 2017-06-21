@@ -46,4 +46,10 @@
     */
 
     /* Global Application Styling */
+
+    // icon scaling dynamic font size
+    .fa-icon {
+        width: auto;
+        height: 1em;
+    }
 </style>

@@ -7,12 +7,11 @@
                     <p>Dishh &copy;2017</p>
                 </div>
                 <div class="column is-4">
-                    <a class="nav-item" href="https://github.com/jgthms/bulma">
-                        <icon name="github"></icon>
-                        <span class="icon"><i class="fa fa-github"></i></span>
+                    <a href="https://twitter.com/#" target="_blank">
+                        <icon name="twitter" scale="1.5" label="Twitter"></icon>
                     </a>
-                    <a class="nav-item" href="https://twitter.com/jgthms">
-                        <span class="icon"><i class="fa fa-twitter"></i></span>
+                    <a href="https://facebook.com/#" target="_blank">
+                        <icon name="facebook" scale="1.5" label="Facebook"></icon>
                     </a>
                 </div>
             </div>
@@ -21,7 +20,8 @@
 </template>
 
 <script>
-    import 'vue-awesome/icons/github';
+    import 'vue-awesome/icons/twitter';
+    import 'vue-awesome/icons/facebook';
     import Icon from 'vue-awesome/components/Icon';
 
     export default {
