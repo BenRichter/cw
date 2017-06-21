@@ -1,7 +1,7 @@
 <template>
     <div class="call-area">
-        <button class="btn large" :disabled="{ isCalledWaiter }" @click="callWaiter">Kellner rufen</button>
-        <button class="btn small" :disabled="{ isCalledCheck }" @click="callCheck">Rechnung bitte</button>
+        <button class="button is-primary is-large" :class="{ 'is-loading' : isCalledWaiter }" @click="callWaiter">Kellner rufen</button>
+        <button class="button is-warning is-small" :class="{ 'is-loading' : isCalledCheck }"  @click="callCheck">Rechnung bitte</button>
     </div>
 </template>
 
@@ -25,22 +25,9 @@
     };
 </script>
 
-<style scoped>
-    .btn {
-        width: 100%;
-        display:block;
-        border-radius: 0;
-        color: #ffffff;
-        text-shadow: 1px 1px 0 #2b2b2b;
-    }
-
-    .btn.large {
-        background-color: #0E89B6;
-        line-height:      70px;
-    }
-
-    .btn.small {
-        background-color: #ecdf26;
-        line-height:      30px;
+<style scoped lang="scss">
+    .button {
+        display: block;
+        margin-bottom: 0.5em;
     }
 </style>
