@@ -24,6 +24,7 @@
     import 'vue-awesome/icons/facebook';
     import Icon from 'vue-awesome/components/Icon';
 
+    // todo: make global https://github.com/Justineo/vue-awesome
     export default {
         components: {
             Icon
