@@ -5,8 +5,6 @@ module.exports = {
     port: 4000,
     title: 'dishhh - Einfach Schneller',
     description: 'Call your waiter and get served faster',
-    // when you use electron please set to relative path like ./
-    // otherwise only set to absolute path when you're using history mode
     publicPath: '/',
     // disable babelrc by default
     babel: {
