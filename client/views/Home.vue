@@ -41,3 +41,8 @@
         }
     };
 </script>
+
+<style scoped lang="scss">
+    /* Specific Page Styles */
+
+</style>
