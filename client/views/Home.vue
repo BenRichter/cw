@@ -1,7 +1,7 @@
 <template>
     <div class="section">
         <div class="container">
-            <alert-message></alert-message>
+            <notification status="is-warning">Awesome we did it!</notification>
 
             <buttonCallWaiter></buttonCallWaiter>
             <buttonCallCheck></buttonCallCheck>
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-    import alertMessage from '../components/AlertMessage.vue';
+    import notification from '../components/Notification.vue';
     import buttonCallWaiter from '../components/ButtonCallWaiter.vue';
     import buttonCallCheck from '../components/ButtonCallCheck.vue';
 
     export default {
         components: {
-            alertMessage,
+            notification,
             buttonCallWaiter,
             buttonCallCheck
         }
