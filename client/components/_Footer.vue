@@ -2,11 +2,13 @@
     <footer class="footer">
         <div class="container content">
             <div class="columns">
-                <div class="column is-4"></div>
+                <div class="column is-4">
+                    <a class="" href="#">About</a>
+                </div>
                 <div class="column is-4 has-text-centered">
                     <p>Dishh &copy;2017</p>
                 </div>
-                <div class="column is-4">
+                <div class="column is-4 has-text-right">
                     <a href="https://twitter.com/#" target="_blank">
                         <icon name="twitter" scale="1.5" label="Twitter"></icon>
                     </a>
