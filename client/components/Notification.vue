@@ -22,5 +22,8 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss">
+    .notification {
+        padding: 0.4rem 2.5rem 0.4rem 0.5rem;
+    }
 </style>
