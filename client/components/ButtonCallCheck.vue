@@ -1,6 +1,6 @@
 <template>
     <div class="call-area">
-        <button class="button is-warning is-small" :class="{ 'is-loading' : isCalledCheck }"  @click="callCheck">Rechnung bitte</button>
+        <button class="button is-warning is-small" :class="{ 'is-loading' : isCalledCheck }" @click="callCheck">Rechnung bitte</button>
     </div>
 </template>
 
