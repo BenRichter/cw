@@ -17,8 +17,6 @@
 </template>
 
 <script>
-    //import counter from 'components/Counter';
-
     export default {
         components: {}
     };

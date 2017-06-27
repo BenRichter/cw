@@ -3,8 +3,8 @@
         <div class="container">
             <notification status="is-warning">Awesome we did it!</notification>
 
-            <buttonCallWaiter></buttonCallWaiter>
-            <buttonCallCheck></buttonCallCheck>
+            <button-call-waiter></button-call-waiter>
+            <button-call-check></button-call-check>
         </div>
     </div>
 </template>
