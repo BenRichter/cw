@@ -1,18 +1,14 @@
 <template>
     <div>
-        <p>An welchem Tisch sitzt du?</p>
-
         <Notification v-if="hasError" status="is-warning">Das ist keine gültige Tischnummer</Notification>
 
-        <div class="field is-horizontal has-addons">
-            <label for="tableNbr">Tischnummer</label>
-
-
+        <label for="tableNbr" class="label is-block">An welchem Tisch sitzt du?</label>
+        <div class="field has-addons">
             <p class="control has-icons-left">
-                <!--todo: max number by restaurant-->
                 <input v-model="tableNumber" type="number" min="1" :max="tableCountMax" step="1" :placeholder="tableCountPlaceholder" class="input is-large" id="tableNbr"/>
-                <span class="icon is-small is-left">
-                    <Icon name="user-circle" label="user-circle"></Icon>
+
+                <span class="icon is-left">
+                    <Icon name="user-circle" label="User"></Icon>
                 </span>
             </p>
             <p class="control">
@@ -27,12 +23,11 @@
     import Icon from 'vue-awesome/components/Icon';
     import Notification from './Notification.vue';
 
-
     export default {
         data() {
             return {
-                tableCountMax: 25,
-                tableCountPlaceholder: '9 \u00BE',
+                tableCountMax: 25, // todo: get number by restaurant
+                tableCountPlaceholder: '9\u00BE',
                 tableNumber: '',
                 hasError: false,
                 isLoading: false
