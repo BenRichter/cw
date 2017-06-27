@@ -10,10 +10,10 @@
                 </div>
                 <div class="column is-4 has-text-right">
                     <a href="https://twitter.com/#" target="_blank">
-                        <icon name="twitter" scale="1.5" label="Twitter"></icon>
+                        <Icon name="twitter" scale="1.5" label="Twitter"></Icon>
                     </a>
                     <a href="https://facebook.com/#" target="_blank">
-                        <icon name="facebook" scale="1.5" label="Facebook"></icon>
+                        <Icon name="facebook" scale="1.5" label="Facebook"></Icon>
                     </a>
                 </div>
             </div>
