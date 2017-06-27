@@ -2,7 +2,7 @@
     <div>
         <Notification v-if="hasError" status="is-warning">Das ist keine gültige Tischnummer</Notification>
 
-        <label for="tableNbr" class="label is-block">An welchem Tisch sitzt du?</label>
+        <label for="tableNbr" class="label">An welchem Tisch sitzt du?</label>
         <div class="field has-addons">
             <p class="control has-icons-left">
                 <input v-model="tableNumber" type="number" min="1" :max="tableCountMax" step="1" :placeholder="tableCountPlaceholder" class="input is-large" id="tableNbr"/>
