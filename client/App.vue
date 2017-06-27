@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" class="content is-marginless">
         <header-component></header-component>
         <router-view></router-view>
         <footer-component></footer-component>
