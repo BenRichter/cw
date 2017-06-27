@@ -1,10 +1,16 @@
 <template>
     <div class="section">
         <div class="container">
-            <h1>Willkommen im xyz!</h1>
-
-            <input-tbl-nbr></input-tbl-nbr>
-
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">Willkommen im xyz!</p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <input-tbl-nbr></input-tbl-nbr>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
