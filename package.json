@@ -12,7 +12,7 @@
   },
   "ava": {
     "require": [
-      "./ava-setup.js"
+      "./tests/ava-setup.js"
     ],
     "files": [
       "tests/unit/*.js"

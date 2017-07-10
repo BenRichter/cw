@@ -10,4 +10,4 @@ const { join } = require('path');
 browserEnv();
 
 // Pass an absolute path to your webpack configuration to the hook function.
-hook(join(__dirname, 'build/webpack.config.test.js'));
+hook(join(__dirname, '$build/webpack.config.test.js'));
