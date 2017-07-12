@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import test from 'ava';
-import notification from './components/Notification.vue';  // todo: fix path
+import notification from './../client/components/Notification.vue';
 
 //
 //test('renders the correct message', async (t) => {
@@ -12,3 +12,11 @@ import notification from './components/Notification.vue';  // todo: fix path
 //    await nextTick();
 //    t.is(vm.$el.querySelector('h1').textContent, 'Hello, Foo!');
 //});
+
+test('renders', t => {
+    const vm = new Vue(notification).$mount();
+    const tree = {
+        $el: vm.$el.outerHTML
+    };
+    t.snapshot(tree);
+});
