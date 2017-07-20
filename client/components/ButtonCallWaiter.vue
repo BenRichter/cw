@@ -9,9 +9,8 @@
                 isCalledWaiter: false
             };
         },
-        {
-            callWaiter();
-            {
+        methods: {
+            callWaiter() {
                 this.isCalledWaiter = true;
 
                 // access store todo: remove

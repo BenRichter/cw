@@ -16,9 +16,8 @@
                 isHidden: false
             }
         },
-        {
-            hide();
-            {
+        methods: {
+            hide() {
                 this.isHidden = true;
             }
         }
