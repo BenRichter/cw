@@ -1,4 +1,6 @@
 <!-- http://bulma.io/documentation/elements/notification/ -->
+
+<!-- for multiple see https://vuejs.org/v2/guide/components.html#Named-Slots -->
 <template>
     <div class="notification" :class="[{ 'is-hidden' : isHidden}, status]">
         <button class="delete" @click="hide"></button>
@@ -14,8 +16,9 @@
                 isHidden: false
             }
         },
-        methods: {
-            hide() {
+        {
+            hide();
+            {
                 this.isHidden = true;
             }
         }
