@@ -11,6 +11,8 @@
             <hr/>
             <p>
                 Das ist peinlich. Schnell <a href="javascript: history.back()">zurück</a> !
+
+                <!--todo: http://www.calltoidea.com/404/-->
             </p>
         </div>
     </div>
