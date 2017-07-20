@@ -9,12 +9,16 @@
                 isCalledWaiter: false
             };
         },
-        methods: {
-            callWaiter() {
+        {
+            callWaiter();
+            {
                 this.isCalledWaiter = true;
+
+                // access store todo: remove
+                console.log(this.$store.state.count);
             }
         },
-    };
+    }
 </script>
 
 <style scoped lang="scss">
