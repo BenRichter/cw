@@ -5,6 +5,11 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
     state: {
+        location: {
+            name: '',
+            seats: 0
+        },
+
         count: 0
     },
     mutations: {
