@@ -2,13 +2,23 @@
     <div class="section">
         <div class="container">
 
-            <div class="card">
+            <div v-if="bar.pending">Loading...</div>
+
+            <div class="card" v-if="bar.fulfilled">
                 <header class="card-header">
-                    <p class="card-header-title">Willkommen im {{ bar }}</p>
+                    <p class="card-header-title">Willkommen bei {{ bar.value.login }}</p>
                 </header>
                 <div class="card-content">
                     <div class="content">
                         <input-tbl-nbr></input-tbl-nbr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" v-if="bar.rejected">
+                <div class="card-content">
+                    <div class="content">
+                        {{ bar.reason.message }}
                     </div>
                 </div>
             </div>
@@ -19,20 +29,21 @@
 
 <script>
     import inputTblNbr from '../components/InputTableNbr.vue';
-//    import FetchData from 'vue-fetch-data';
 
     export default {
+        props: ['barId'],
         data: () => ({
-            isLoading: true,
-            isBar: false
+            bar: {},
         }),
         beforeMount() {
             this.fetchBar();
         },
-        props: ['bar'],
+        fetch: {
+            bar: vm => `https://api.github.com/users/${vm.barId}`
+        },
         methods: {
             fetchBar() {
-                console.log("fetch bar!!!");
+//                console.log("fetch bar!!!");
             }
         },
         components: {
