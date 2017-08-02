@@ -35,16 +35,13 @@
         data: () => ({
             bar: {},
         }),
-        beforeMount() {
-            this.fetchBar();
-        },
         fetch: {
 //       todo: save data to store     https://github.com/egoist/vue-fetch-data
             bar: x => `https://api.github.com/users/${x.barId}`
         },
         methods: {
             fetchBar() {
-//                console.log("fetch bar!!!");
+              //  console.log("loaded on mount");
             }
         },
         components: {
