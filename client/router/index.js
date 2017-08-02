@@ -12,6 +12,11 @@ export default new Router({
     routes: [
         { path: '/', component: Home },
         { path: '/table', component: Landing },
-        { path: '*', component: NotFound } // history mode disables server handling
+        { path: '*', component: NotFound }, // history mode disables server handling
+
+        // Todo: automate routing of new stores
+        { path: '/:bar', component: Landing, props: true }, // bar id
+        { path: '/bar1', component: Landing }, // Test store 2
+        { path: '/bar2', component: Landing } // Test store 3
     ]
 });
