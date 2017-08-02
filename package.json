@@ -26,10 +26,13 @@
   },
   "babel": {
     "presets": [
-        "@ava/stage-4",
-        ["vue-app", {
+      "@ava/stage-4",
+      [
+        "vue-app",
+        {
           "useBuiltIns": true
-        }]
+        }
+      ]
     ]
   },
   "author": "Ben <ben.k.richter@gmail.com>",
@@ -40,6 +43,7 @@
     "promise-polyfill": "^6.0.2",
     "vue": "^2.1.0",
     "vue-awesome": "^2.3.1",
+    "vue-fetch-data": "^0.2.0",
     "vue-router": "^2.0.0",
     "vuex": "^2.0.0",
     "vuex-router-sync": "^4.1.2"
