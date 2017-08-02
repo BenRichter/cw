@@ -39,7 +39,8 @@
             this.fetchBar();
         },
         fetch: {
-            bar: vm => `https://api.github.com/users/${vm.barId}`
+//       todo: save data to store     https://github.com/egoist/vue-fetch-data
+            bar: x => `https://api.github.com/users/${x.barId}`
         },
         methods: {
             fetchBar() {
