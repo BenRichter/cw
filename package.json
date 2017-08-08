@@ -7,26 +7,18 @@
     "build": "webpack --config build/webpack.prod.js",
     "dev": "node build/server.js",
     "lint": "eslint client/* --ext .js --ext .vue",
-    "test": "ava --watch",
+    "test": "ava client/components/*.test.js --watch",
     "test:functional": "testcafe all tests/functional/index.js --app \"npm run dev\" --app-init-delay 10000"
   },
   "ava": {
     "babel": "inherit",
     "require": [
       "babel-register",
-      "./tests/unit/helpers/ava-setup.js"
-    ],
-    "files": [
-      "./tests/unit/*.js"
-    ],
-    "source": [
-      "client/**/*.{js,jsx}",
-      "!dist/**/*"
+      "./build/ava-setup.js"
     ]
   },
   "babel": {
-    "presets": [
-      "@ava/stage-4",
+    "presets": ["@ava/stage-4",
       [
         "vue-app",
         {
