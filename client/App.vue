@@ -17,8 +17,6 @@
             footerComponent
         }
     }
-
-    // require('./reset.css');
 </script>
 
 
@@ -30,12 +28,13 @@
     @import "../node_modules/bulma/sass/grid/_all";
     @import "../node_modules/bulma/sass/layout/_all";
 
-    /* Bulma Variables for Theming
-       http://bulma.io/documentation/overview/variables/
-    */
-    $blue: #72d0eb;
+    /* Bulmaswatch for Theming
+     * https://jenil.github.io/bulmaswatch/
+     */
+    @import "../node_modules/bulmaswatch/flatly/variables";
+    @import "../node_modules/bulmaswatch/flatly/overrides";
 
-    $primary: $turquoise;
+
 
     /* http://bulma.io/documentation/overview/responsiveness/
 

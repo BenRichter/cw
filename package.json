@@ -18,7 +18,8 @@
     ]
   },
   "babel": {
-    "presets": ["@ava/stage-4",
+    "presets": [
+      "@ava/stage-4",
       [
         "vue-app",
         {
@@ -32,6 +33,7 @@
   "dependencies": {
     "babel-runtime": "^6.18.0",
     "bulma": "^0.5.0",
+    "bulmaswatch": "^0.5.0",
     "promise-polyfill": "^6.0.2",
     "vue": "^2.1.0",
     "vue-awesome": "^2.3.1",
