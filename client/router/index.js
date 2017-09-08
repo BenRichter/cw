@@ -10,9 +10,18 @@ Vue.use(Router);
 export default new Router({
     mode: 'history',
     routes: [
-        { path: '/', component: Home },
-        { path: '/table', component: Landing },
-        { path: '*', component: NotFound }, // history mode disables server handling
+        {
+            name: 'home',
+            path: '/',
+            component: Home },
+        {
+            path: '/table',
+            component: Landing
+        },
+        { // manual 404 error: history mode disables server handling
+            path: '*',
+            component: NotFound
+        },
 
         // Todo: automate routing of new stores
         { path: '/:barId', component: Landing, props: true }, // bar id

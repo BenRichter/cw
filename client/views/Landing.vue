@@ -48,8 +48,7 @@
             inputTblNbr
         }
 
-        // router.replace(location, onComplete?, onAbort?)
-        // https://router.vuejs.org/en/essentials/navigation.html
+
     }
 </script>
 

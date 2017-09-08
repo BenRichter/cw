@@ -22,6 +22,7 @@
     import 'vue-awesome/icons/coffee';
     import Icon from 'vue-awesome/components/Icon';
     import Notification from './Notification.vue';
+    import Router from 'vue-router';
 
     export default {
         data() {
@@ -39,8 +40,13 @@
 
 
                 if (this.validateInput()) {
-                    console.log('valid');
+                    const router = new Router();
+
                     console.log('redirect to ' + this.tableNumber);
+
+                    // No trace in history --> logout neccessary if change
+                    // https://router.vuejs.org/en/essentials/navigation.html
+                    router.replace({ name: 'home' });
                 }
             },
             validateInput() {
